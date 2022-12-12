@@ -1,0 +1,105 @@
+# Site settings
+baseurl = "https://interstellar.flights/"
+languageCode = "ko-kr"
+title = "Interstellar Relay Community"
+theme = "stellar"
+
+googleAnalytics = "" #put your google-analytics ID here
+
+[params]
+  [params.header]
+    title = "Interstellar Relay Community"
+    description = 'Currently Under Construction'
+    image = "images/logo.svg"
+
+  [[params.navigation]]
+    name = "소개"
+    href = "#intro"
+
+  [[params.navigation]]
+    name = "통계"
+    href = "#statistics"
+
+  [[params.navigation]]
+    name = "문의사항"
+    href = "#contacts"
+
+  [params.intro]
+    title = "소개"
+    description = "Interstellar Relay Community는 ActivityPub 프로토콜을 사용하는 서비스 간 메세지를 중계하는 릴레이 서비스 입니다."
+
+  [[params.section]]
+    id = "statistics"
+    title = "통계"
+    description = "Interstellar Relay Community에 대한 통계 정보"
+
+    [params.section.statistics]
+      enable = true
+      [[params.section.statistic]]
+        icon = "fa-server"
+        value = "0"
+        text = "참여 서버 수"
+      [[params.section.statistic]]
+        icon = "fa-commenting-o"
+        value = "0"
+        text = "전달한 메세지"
+
+
+  [[params.section]]
+    id = "contacts"
+    title = "문의사항"
+    description = "준비 중"
+    [params.section.footer]
+      enable = false
+      [[params.section.footer.action]]
+        buttontext = "이메일"
+        buttonUrl = "mailto:ap@interstellar.flights"
+        customClass = "special"
+
+  [params.footer]
+    enable = false
+    title = "Aliquam sed mauris"
+    description = "Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio."
+
+    second_title = "Etiam feugiat"
+    address = "1234 Somewhere Road &bull; Nashville, TN 00000 &bull; USA"
+    phone = "(000) 000-0000 x 0000"
+    email = "information@untitled.tld"
+
+    [[params.footer.action]]
+      href = "generic.html"
+      buttontext = "Learn More"
+
+    # social icons
+    [params.footer.social_list]
+      enable = false
+
+      [[params.footer.social]]
+        title = "Twitter"
+        icon = "fa-twitter"
+        link = "#"
+
+      [[params.footer.social]]
+        title = "Facebook"
+        icon = "fa-facebook"
+        link = "#"
+
+      [[params.footer.social]]
+        title = "Instagramm"
+        icon = "fa-instagram"
+        link = "#"
+
+      [[params.footer.social]]
+        title = "Dribbble"
+        icon = "fa-dribbble"
+        link = "#"
+
+      [[params.footer.social]]
+        title = "Email"
+        icon = "fa-envelope"
+        link = "#"
+
+    # copyright
+    [params.footer.copyright]
+      enable = true
+      text = "© Interstellar Relay Community, Design: [HTML5UP](//html5up.net)"
