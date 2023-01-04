@@ -1,0 +1,10 @@
+{{ $footer := .Site.Params.footer }}
+{{ if $footer.enable }}
+    {{ $footer.title }}
+    {{ $footer.description }}
+    {{ $footer.email }}
+{{ end }}
+{{ if $footer.copyright.enable }}
+    {{ $footer.copyright.text }} |
+    Design by <a href="{{$footer.copyright.link}}">{{ $footer.copyright.author }}</a>
+{{ end }}
