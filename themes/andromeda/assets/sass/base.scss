@@ -1,0 +1,39 @@
+@font-face {
+    src: url("/fonts/NanumSquareNeoTTF-bRg.woff2");
+    font-family: NanumSquareNeo;
+    font-weight: normal;
+}
+
+@font-face {
+    src: url("/fonts/NanumSquareNeoTTF-eHv.woff2");
+    font-family: NanumSquareNeo;
+    font-weight: bold;
+}
+
+@font-face {
+    src: url("/fonts/Staatliches-Regular.ttf");
+    font-family: Staatliches;
+}
+
+html {
+    font-family: NanumSquareNeo;
+    background-color: $bg;
+    color: $fg;
+    font-size: $base-font-size;
+}
+
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+h1 {
+    color: $fg-title;
+}
+
+a {
+    &:visited {
+        color: $link-vistied;
+    }
+}
