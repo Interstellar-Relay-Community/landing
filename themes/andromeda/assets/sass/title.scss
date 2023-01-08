@@ -93,25 +93,45 @@
             padding: 0.3rem 1rem;
             @include pulse;
             animation-delay: 0.4s;
+            height: 1.1em;
+            &:after {
+                content: "";
+                white-space: nowrap;
+            }
         }
         .toot {
             margin: 0.5rem 0;
-            min-height: 4rem;
+            height: 4.5rem;
+            overflow: hidden;
+            &:after {
+                content: "";
+                white-space: pre-wrap;
+            }
         }
         .metadata {
             font-size: 0.9em;
             padding: 0.5rem 1rem;
-            min-height: 1rem;
+            height: 1em;
+            &:after {
+                content: "";
+                white-space: nowrap;
+            }
         }
         .delay {
             position: absolute;
             right: 0;
             bottom: 0;
             padding: 0.5rem 0.3rem 0.5rem 0.3rem;
-            min-width: 3rem;
-            text-align: center;
+            width: 3.6em;
+            height: 1em;
+            text-align: right;
             @include pulse;
             animation-delay: 0.6s;
+            overflow: hidden;
+            &:after {
+                content: "";
+                white-space: nowrap;
+            }
         }
     }
 }

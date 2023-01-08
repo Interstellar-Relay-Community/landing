@@ -1,0 +1,66 @@
+.anim .tootbox {
+    .user:after {
+        animation: userbox $tootbox-period linear infinite;
+        animation-delay: 0.4s;
+        @keyframes userbox {
+            0% {content: "@Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";}
+            20% {content: "@Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."}
+            20.1% {content: "@username2"}
+            40% {content: "@username2"}
+            40.1% {content: "1 ns"}
+            60% {content: "1 ns"}
+            60.1% {content: "8 ns"}
+            80% {content: "8 ns"}
+            80.1% {content: "10 ns"}
+            100% {content: "10 ns"}
+        }
+    }
+    .toot:after {
+        animation: toot $tootbox-period linear infinite;
+        animation-delay: 0.45s;
+        @keyframes toot {
+            0% {content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";}
+            20% {content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."}
+            20.1% {content: "가나다라마바사"}
+            40% {content: "가나다라마바사"}
+            40.1% {content: "Never gonna give you up!"}
+            60% {content: "Never gonna give you up!"}
+            60.1% {content: "붕어빵 먹고 싶다"}
+            80% {content: "붕어빵 먹고 싶다"}
+            80.1% {content: "End of the loop"}
+            100% {content: "End of the loop"}
+        }
+    }
+    .metadata:after {
+        animation: metadata $tootbox-period linear infinite;
+        animation-delay: 0.5s;
+        @keyframes metadata {
+            0% {content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";}
+            20% {content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."}
+            20.1% {content: "가나다라마바사"}
+            40% {content: "가나다라마바사"}
+            40.1% {content: "Never gonna give you up!"}
+            60% {content: "Never gonna give you up!"}
+            60.1% {content: "붕어빵 먹고 싶다"}
+            80% {content: "붕어빵 먹고 싶다"}
+            80.1% {content: "End of the loop"}
+            100% {content: "End of the loop"}
+        }
+    }
+    .delay:after {
+        animation: delaybox $tootbox-period linear infinite;
+        animation-delay: 0.55s;
+        @keyframes delaybox {
+            0% {content: "000 ns";}
+            20% {content: "000 ns"}
+            20.1% {content: "4 ns"}
+            40% {content: "4 ns"}
+            40.1% {content: "1 ns"}
+            60% {content: "1 ns"}
+            60.1% {content: "8 ns"}
+            80% {content: "8 ns"}
+            80.1% {content: "10 ns"}
+            100% {content: "10 ns"}
+        }
+    }
+}
