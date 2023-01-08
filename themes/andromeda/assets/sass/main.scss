@@ -22,10 +22,8 @@ $color-path-base: white;
 $color-path-pulse: yellow;
 
 // interactive elements
-$color-button-base: white;
-$color-button-hover: grey;
-$link-base: #105243;
-$link-hover: green;
+$color-button: white;
+$color-link: rgb(1, 107, 1);
 $link-vistied: rgb(183, 45, 183);
 
 @import 'base';

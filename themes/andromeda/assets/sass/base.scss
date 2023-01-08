@@ -52,20 +52,20 @@ h2 {
 // used for interactive link (button)
 h3 {
     margin: auto;
-    padding: 0.3em;
     text-align: center;
     font-size: 1.8rem;
-    background-color: $color-button-base;
+    background-color: $color-button;
+    opacity: 0.6;
+    display: inline-block;
     a {
+        padding: 0.3em;
+        display: inline-block;
         text-decoration: none;
-        color: $link-base;
+        color: $color-link;
     }
     &:hover {
-        background-color: $color-button-hover;
-        a {
-            color: $link-hover;
-            text-shadow: rgba(255, 255, 255, 0.2) 0 0 0.2em;
-        }
+        opacity: 0.8;
+        cursor: pointer;
     }
 }
 
