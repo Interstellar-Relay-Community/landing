@@ -86,8 +86,8 @@ header {
         background: linear-gradient(90deg,
             $color-cable-base 0%,
             $color-cable-pulse 2%,
-            $color-cable-pulse 8%,
-            $color-cable-base 10%,
+            $color-cable-pulse 6%,
+            $color-cable-base 8%,
             $color-cable-base 100%);
         animation: gradient $period ease-in-out infinite;
         height: 0.8rem;
