@@ -182,9 +182,27 @@ svg.galaxy {
     padding: 2%;
     margin-bottom: -1rem;
     fill: $color-cable-base;
+    .andromeda {
+        &.core {
+            filter: drop-shadow(0 $galaxy-shadow-y $galaxy-shadow-size $color-galaxy-shadow) drop-shadow(0 $galaxy-shadow-y $galaxy-shadow-size $color-galaxy-shadow) drop-shadow(0 0.2em $galaxy-shadow-size $color-galaxy-shadow);
+            @keyframes galaxy {
+                1% {filter: drop-shadow(0 $galaxy-shadow-y $galaxy-shadow-size $color-galaxy-shadow) drop-shadow(0 $galaxy-shadow-y $galaxy-shadow-size $color-galaxy-shadow) drop-shadow(0 $galaxy-shadow-y $galaxy-shadow-size $color-galaxy-shadow);}
+                5% {filter: drop-shadow(0 $galaxy-shadow-y $galaxy-shadow-size $color-galaxy-shadow2) drop-shadow(0 $galaxy-shadow-y $galaxy-shadow-size $color-galaxy-shadow2) drop-shadow(0 $galaxy-shadow-y $galaxy-shadow-size $color-galaxy-shadow2);}
+                11% {filter: drop-shadow(0 $galaxy-shadow-y $galaxy-shadow-size $color-galaxy-shadow2) drop-shadow(0 $galaxy-shadow-y $galaxy-shadow-size $color-galaxy-shadow2) drop-shadow(0 $galaxy-shadow-y $galaxy-shadow-size $color-galaxy-shadow2);}
+                26% {filter: drop-shadow(0 $galaxy-shadow-y $galaxy-shadow-size $color-galaxy-shadow) drop-shadow(0 $galaxy-shadow-y $galaxy-shadow-size $color-galaxy-shadow) drop-shadow(0 $galaxy-shadow-y $galaxy-shadow-size $color-galaxy-shadow);}
+
+                52% {filter: drop-shadow(0 $galaxy-shadow-y $galaxy-shadow-size $color-galaxy-shadow) drop-shadow(0 $galaxy-shadow-y $galaxy-shadow-size $color-galaxy-shadow) drop-shadow(0 $galaxy-shadow-y $galaxy-shadow-size $color-galaxy-shadow);}
+                57% {filter: drop-shadow(0 $galaxy-shadow-y $galaxy-shadow-size $color-galaxy-shadow2) drop-shadow(0 $galaxy-shadow-y $galaxy-shadow-size $color-galaxy-shadow2) drop-shadow(0 $galaxy-shadow-y $galaxy-shadow-size $color-galaxy-shadow2);}
+                63% {filter: drop-shadow(0 $galaxy-shadow-y $galaxy-shadow-size $color-galaxy-shadow2) drop-shadow(0 $galaxy-shadow-y $galaxy-shadow-size $color-galaxy-shadow2) drop-shadow(0 $galaxy-shadow-y $galaxy-shadow-size $color-galaxy-shadow2);}
+                78% {filter: drop-shadow(0 $galaxy-shadow-y $galaxy-shadow-size $color-galaxy-shadow) drop-shadow(0 $galaxy-shadow-y $galaxy-shadow-size $color-galaxy-shadow) drop-shadow(0 0.2em 0.3rem $color-galaxy-shadow);}
+            }
+            animation: galaxy $double-period ease-in infinite;
+        }
+        fill: $color-galaxy-pulse;
+    }
     .small {
         &.path {
-            stroke: $color-cable-base;
+            stroke: $color-svg-base2;
             stroke-width: 0.02rem;
             &.n1 {@include flicker-stroke(2s, 7s);}
             &.n2 {@include flicker-stroke(0, 13s);}
@@ -202,47 +220,49 @@ svg.galaxy {
     }
     .big {
         &.path.n1, &.star.n1 {
-            animation: bigpath1 $double-period ease-out infinite;
+            animation: bigpath1 $double-period linear infinite;
+            fill: $color-svg-base;
             @keyframes bigpath1 {
-                0% {fill: $color-cable-base;}
-                5% {fill: $color-cable-pulse;}
-                10% {fill: $color-cable-pulse;}
-                15% {fill: $color-cable-base;}
+                0% {fill: $color-svg-base;}
+                5% {fill: $color-svg-pulse;}
+                10% {fill: $color-svg-pulse;}
+                17% {fill: $color-svg-base;}
 
-                57% {fill: $color-cable-base;}
-                62% {fill: $color-cable-pulse;}
-                67% {fill: $color-cable-pulse;}
-                72% {fill: $color-cable-base;}
+                57% {fill: $color-svg-base;}
+                62% {fill: $color-svg-pulse;}
+                67% {fill: $color-svg-pulse;}
+                74% {fill: $color-svg-base;}
             }
         }
         &.path.n2, &.star.n2 {
-            animation: bigpath2 $double-period ease-out infinite;
+            fill: $color-svg-base;
+            animation: bigpath2 $double-period linear infinite;
             @keyframes bigpath2 {
-                0% {fill: $color-cable-base;}
-                5% {fill: $color-cable-base;}
-                10% {fill: $color-cable-pulse;}
-                15% {fill: $color-cable-pulse;}
-                20% {fill: $color-cable-base;}
+                0% {fill: $color-svg-base;}
+                5% {fill: $color-svg-base;}
+                10% {fill: $color-svg-pulse;}
+                15% {fill: $color-svg-pulse;}
+                22% {fill: $color-svg-base;}
 
-                52% {fill: $color-cable-base;}
-                57% {fill: $color-cable-pulse;}
-                62% {fill: $color-cable-pulse;}
-                67% {fill: $color-cable-base;}
+                52% {fill: $color-svg-base;}
+                57% {fill: $color-svg-pulse;}
+                62% {fill: $color-svg-pulse;}
+                69% {fill: $color-svg-base;}
             }
         }
         &.path.n3, &.star.n3 {
-            animation: bigpath3 $double-period ease-out infinite;
+            animation: bigpath3 $double-period linear infinite;
             @keyframes bigpath3 {
-                0% {fill: $color-cable-base;}
-                6% {fill: $color-cable-base;}
-                11% {fill: $color-cable-pulse;}
-                16% {fill: $color-cable-pulse;}
-                21% {fill: $color-cable-base;}
+                0% {fill: $color-svg-base;}
+                6% {fill: $color-svg-base;}
+                11% {fill: $color-svg-pulse;}
+                16% {fill: $color-svg-pulse;}
+                23% {fill: $color-svg-base;}
 
-                58% {fill: $color-cable-base;}
-                63% {fill: $color-cable-pulse;}
-                68% {fill: $color-cable-pulse;}
-                73% {fill: $color-cable-base;}
+                58% {fill: $color-svg-base;}
+                63% {fill: $color-svg-pulse;}
+                68% {fill: $color-svg-pulse;}
+                73% {fill: $color-svg-base;}
             }
         }
     }

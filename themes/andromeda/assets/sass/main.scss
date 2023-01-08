@@ -9,8 +9,17 @@ $media-medium: 68rem;
 $media-narrow: 32rem;
 
 // tootbox and animation variables
-$color-cable-base: white;
-$color-cable-pulse: yellow;
+$color-cable-base: rgba(255, 255, 255, 0.1);
+$color-cable-pulse: rgb(194, 250, 52);
+$color-svg-base: rgba(255, 255, 255, 0.05);
+$color-svg-base2: white;
+$color-svg-pulse: rgb(167, 255, 90);
+$color-galaxy-base: rgb(55, 55, 55);
+$color-galaxy-pulse: white;
+$color-galaxy-shadow: rgba(255, 255, 255, 0.157);
+$color-galaxy-shadow2: rgb(206, 251, 8);
+$galaxy-shadow-y: 0.18rem;
+$galaxy-shadow-size: 0.25rem;
 $color-timebox: white;
 $tootbox-width: 20rem;
 $period: 5s;
