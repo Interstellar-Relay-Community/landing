@@ -119,7 +119,7 @@ header {
     }
     .tootbox {
         position: relative;
-        background-color: grey;
+        background-color: $color-tootbox;
         width: $tootbox-width;
         p {
             margin: 0;
@@ -130,6 +130,7 @@ header {
             background-color: white;
             padding: 0.3rem 1rem;
             @include pulse;
+            color: $fg-tootuser;
             animation-delay: 0.4s;
             height: 1.1em;
             &:after {
@@ -141,6 +142,7 @@ header {
             margin: 0.5rem 0;
             height: 4.5rem;
             overflow: hidden;
+            color: $fg-toot;
             &:after {
                 content: "";
                 white-space: pre-wrap;
@@ -150,6 +152,7 @@ header {
             font-size: 0.9em;
             padding: 0.5rem 1rem;
             height: 1em;
+            color: $fg-tootmeta;
             &:after {
                 content: "";
                 white-space: nowrap;
@@ -157,6 +160,7 @@ header {
         }
         .delay {
             position: absolute;
+            color: $fg-tootdelay;
             right: 0;
             bottom: 0;
             padding: 0.5rem 0.3rem 0.5rem 0.3rem;
