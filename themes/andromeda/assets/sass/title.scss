@@ -76,65 +76,6 @@ header {
     }
 }
 
-body {
-    perspective: 340px;
-}
-
-.stars {
-    // License applies to this block of code.
-    // Copyright (c) 2023 by Keith Clark (https://codepen.io/keithclark/pen/JjWyBb)
-    // Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-    // The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-    // THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-    $stars: 350;         // Number of start per layer
-    $depth: 200;         // Depth between star layers
-    $speed: 11s;          // Number of seconds to transition between layers
-    $width: 3000;        // Width of the starfield
-    $height: 960;        // Height of the starfield
-    position: absolute;
-    margin-top: -26%;
-    top: 50%;
-    left: 50%;
-    width: 2px;
-    height: 2px;
-    $box-shadow: ();
-    @for $i from 0 through $stars {
-        $box-shadow: $box-shadow, (random($width)-$width/2 + px) (random($height)-$height/2 + px) hsl(90,0,75+random(25));
-    }
-    box-shadow: $box-shadow;
-    transform-style: preserve-3d;
-
-    &:before, &:after {
-        content: "";
-        position: absolute;
-        width: inherit;
-        height: inherit;
-        box-shadow: inherit;
-    }
-    &:before {
-        opacity: .5;
-        transform: translateZ(-$depth + px);
-        animation: fade1 $speed linear infinite;
-    }
-    &:after {
-        transform: translateZ(-$depth * 2 + px);
-        opacity: .1;
-        animation: fade2 $speed linear infinite;
-        animation-delay: 3s;
-    }
-    @keyframes fade1 {
-      0% {opacity: .5;}
-      50% {opacity: .9;}
-      100% {opacity: .5;}
-    }
-    @keyframes fade2 {
-      0% {opacity: .1;}
-      50% {opacity: .5;}
-      100% {opacity: .1;}
-    }
-}
-
 .anim {
     display: flex;
     align-items: center;
