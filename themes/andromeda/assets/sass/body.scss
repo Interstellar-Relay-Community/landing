@@ -1,0 +1,25 @@
+main {
+    p.title {
+        margin: 0.3rem;
+        font-size: 2rem;
+        text-align: center;
+        font-weight: bold;
+    }
+    p.subtitle {
+        margin: 0.3rem;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    section {
+        background-color: $bg-section;
+        .title {
+            background-color: green;
+            color: white;
+        }
+        margin: 3rem auto;
+        max-width: 50rem;
+        p.content {
+            margin: 3rem;
+        }
+    }
+}
