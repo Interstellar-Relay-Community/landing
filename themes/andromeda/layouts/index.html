@@ -6,13 +6,15 @@
         {{ partial "header.html" . }}
         {{ partial "title.html" . }}
         <main>
-            <h2>{{ .Site.Params.title.title}}</h2>
-            <h3>{{ .Site.Params.title.subtitle}}</h3>
+            <p class="title">{{ .Site.Params.title.title}}</p>
+            <p class="subtitle">{{ .Site.Params.title.subtitle}}</p>
             {{ range sort .Pages.ByWeight }}
                 {{ if not .Draft }}
                 <section>
                     <span class="title">{{ .Title }}</span><br>
-                    {{ .Content }}
+                    <div class="content">
+                        {{ .Content }}
+                    </div>
                 </section>
                 {{ end }}
             {{ end }}

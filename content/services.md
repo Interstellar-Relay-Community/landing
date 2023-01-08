@@ -4,4 +4,4 @@ weight: 2
 draft: false
 ---
 
-- ActivityPub 릴레이 [https://ap.interstellar.flights](https://ap.interstellar.flights/)"
+- ActivityPub 릴레이 [https://ap.interstellar.flights](https://ap.interstellar.flights/)
