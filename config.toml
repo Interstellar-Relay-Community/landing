@@ -15,12 +15,6 @@ theme = "andromeda"
     title = "High Performance ActivityPub Relay"
     subtitle = "고성능 ActivityPub 중계 서비스"
 
-  [params.footer]
-    enable = false
-    title = "Aliquam sed mauris"
-    description = "Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio."
-    email = "information@untitled.tld"
-
   [params.footer.copyright]
     enable = true
     text = "© Interstellar Relay Community"
