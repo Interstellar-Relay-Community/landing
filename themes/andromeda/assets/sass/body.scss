@@ -1,12 +1,14 @@
 main {
     > p.title {
-        margin: 0.3rem;
+        margin: 2em 0 0 0;
         font-size: 2rem;
         text-align: center;
         font-weight: bold;
+        color: $fg-bodytitle;
     }
     > p.subtitle {
-        margin: 0.3rem;
+        margin: 0;
+        padding-top: 0.2em;
         text-align: center;
         font-size: 1.5rem;
     }
