@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html>
-    <head>{{ partial "head.html" . }}</head>
+    <head>
+        {{ partial "head.html" . }}</head>
     <body>
-        <h1>{{ partial "header.html" . }}</h1>
+        {{ partial "header.html" . }}
         {{ partial "title.html" . }}
         <main>
-            <!-- change hX tags into a separately styled title,
-                as it steals markdown formatting -->
             <h2>{{ .Site.Params.title.title}}</h2>
             <h3>{{ .Site.Params.title.subtitle}}</h3>
-            <!-- use the top level .md files here as a list -->
+            {{ range sort .Pages.ByWeight }}
+                {{ if not .Draft }}
+                <section>
+                    <span class="title">{{ .Title }}</span><br>
+                    {{ .Content }}
+                </section>
+                {{ end }}
+            {{ end }}
         </main>
         <footer>
             {{ partial "footer.html" . }}

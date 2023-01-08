@@ -1,3 +1,17 @@
-{{ $header := .Site.Params.header }}
-{{ $header.title }}
-{{ $header.description }}
+{{ partial "svg.html" . }}
+<div class="anim">
+    <div class="left">
+        <div class="cable"></div>
+    </div>
+    <div class="tootbox">
+        <p class="user">@username</p>
+        <p class="toot">toot!</p>
+        <p class="metadata">data</p>
+        <div class="delay">1 ns</div>
+    </div>
+    <div class="right">
+        <div class="cable"></div>
+        <div class="cable"></div>
+        <div class="cable"></div>
+    </div>
+</div>
