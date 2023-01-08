@@ -33,6 +33,8 @@ h1 {
 }
 
 a {
+    color: $color-link;
+    text-decoration: none;
     &:visited {
         color: $link-vistied;
     }
