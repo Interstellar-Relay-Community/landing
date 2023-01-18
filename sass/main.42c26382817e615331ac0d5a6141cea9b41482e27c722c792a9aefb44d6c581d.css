@@ -25,10 +25,10 @@ body {
   margin: 0; }
 
 header {
-  padding: 5em; }
+  padding: 5em 0 0 0; }
 
 footer {
-  padding: 5em; }
+  padding: 0 0 5em 0; }
 
 h1 {
   color: #29a929; }
