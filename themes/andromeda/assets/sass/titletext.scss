@@ -3,64 +3,64 @@
         animation: userbox $tootbox-period linear infinite;
         animation-delay: 0.4s;
         @keyframes userbox {
-            0% {content: "@Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";}
-            20% {content: "@Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."}
-            20.1% {content: "@username2"}
-            40% {content: "@username2"}
-            40.1% {content: "1 ns"}
-            60% {content: "1 ns"}
-            60.1% {content: "8 ns"}
-            80% {content: "8 ns"}
-            80.1% {content: "10 ns"}
-            100% {content: "10 ns"}
+            0% {content: "@***@uri.life";}
+            20% {content: "@***@uri.life";}
+            20.1% {content: "@***@silicon.moe"}
+            40% {content: "@***@silicon.moe"}
+            40.1% {content: "@***@funami.tech"}
+            60% {content: "@***@funami.tech"}
+            60.1% {content: "@***@kurry.social"}
+            80% {content: "@***@kurry.social"}
+            80.1% {content: "@***@planet.moe"}
+            100% {content: "@***@planet.moe"}
         }
     }
     .toot:after {
         animation: toot $tootbox-period linear infinite;
         animation-delay: 0.45s;
         @keyframes toot {
-            0% {content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";}
-            20% {content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."}
-            20.1% {content: "가나다라마바사"}
-            40% {content: "가나다라마바사"}
-            40.1% {content: "Never gonna give you up!"}
-            60% {content: "Never gonna give you up!"}
-            60.1% {content: "붕어빵 먹고 싶다"}
-            80% {content: "붕어빵 먹고 싶다"}
-            80.1% {content: "End of the loop"}
-            100% {content: "End of the loop"}
+            0% {content: "붕어빵 먹고 싶다"}
+            20% {content: "붕어빵 먹고 싶다"}
+            20.1% {content: "으아아아아아악"}
+            40% {content: "으아아아아아악"}
+            40.1% {content: "간장 공장 공장장은 강 공장장인가 공 공장장인가"}
+            60% {content: "간장 공장 공장장은 강 공장장인가 공 공장장인가"}
+            60.1% {content: "털이 친절하고 주인장이 맛있어요"}
+            80% {content: "털이 친절하고 주인장이 맛있어요"}
+            80.1% {content: "뿌우!"}
+            100% {content: "뿌우!"}
         }
     }
     .metadata:after {
         animation: metadata $tootbox-period linear infinite;
         animation-delay: 0.5s;
         @keyframes metadata {
-            0% {content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";}
-            20% {content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."}
-            20.1% {content: "가나다라마바사"}
-            40% {content: "가나다라마바사"}
-            40.1% {content: "Never gonna give you up!"}
-            60% {content: "Never gonna give you up!"}
-            60.1% {content: "붕어빵 먹고 싶다"}
-            80% {content: "붕어빵 먹고 싶다"}
-            80.1% {content: "End of the loop"}
-            100% {content: "End of the loop"}
+            0% {content: ""}
+            20% {content: ""}
+            20.1% {content: ""}
+            40% {content: ""}
+            40.1% {content: ""}
+            60% {content: ""}
+            60.1% {content: ""}
+            80% {content: "toot"}
+            80.1% {content: ""}
+            100% {content: ""}
         }
     }
     .delay:after {
         animation: delaybox $tootbox-period linear infinite;
         animation-delay: 0.55s;
         @keyframes delaybox {
-            0% {content: "000 ns";}
-            20% {content: "000 ns"}
-            20.1% {content: "4 ns"}
-            40% {content: "4 ns"}
-            40.1% {content: "1 ns"}
-            60% {content: "1 ns"}
-            60.1% {content: "8 ns"}
-            80% {content: "8 ns"}
-            80.1% {content: "10 ns"}
-            100% {content: "10 ns"}
+            0% {content: "1.32 ms";}
+            20% {content: "1.32 ms"}
+            20.1% {content: "1.59 ms"}
+            40% {content: "1.59 ms"}
+            40.1% {content: "2.14 ms"}
+            60% {content: "2.14 ms"}
+            60.1% {content: "1.53 ms"}
+            80% {content: "1.53 ms"}
+            80.1% {content: "1.94 ms"}
+            100% {content: "1.94 ms"}
         }
     }
 }
